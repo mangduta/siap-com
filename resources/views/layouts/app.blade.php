@@ -245,7 +245,7 @@
             text: "Anda akan keluar dari Dashboard Admin",
             icon: 'question',
             showCancelButton: true,
-            confirmButtonColor: 'var(--navy)',
+            confirmButtonColor: '#3085d6',
             cancelButtonColor: '#d33',
             confirmButtonText: 'Ya, Logout',
             cancelButtonText: 'Batal',

@@ -70,7 +70,7 @@
                                             <span class="me-3">Status:</span>
                                             <span class="badge fs-6 px-4 py-2 rounded-pill bg-{{ 
                                                 $pengaduan->status == 'selesai' ? 'success' : 
-                                                ($pengaduan->status == 'diproses' ? 'warning' : 
+                                                ($pengaduan->status == 'diproses' ? 'info' : 
                                                 ($pengaduan->status == 'ditolak' ? 'danger' : 'secondary')) }}">
                                                 <i class="bi bi-{{ 
                                                     $pengaduan->status == 'selesai' ? 'check-circle' : 
