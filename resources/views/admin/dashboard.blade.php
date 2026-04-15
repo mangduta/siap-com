@@ -49,9 +49,9 @@
             <td>{{ $p->nama_pelapor }}</td>
             <td>{{ $p->judul }}</td>
             <td>
-                <span class="badge bg-{{ $p->status == 'selesai' ? 'success' : ($p->status == 'diproses' ? 'warning' : 'secondary') }}">
-                    {{ ucfirst($p->status) }}
-                </span>
+                   <span class="badge bg-{{ $p->status == 'selesai' ? 'success' : ($p->status == 'diproses' ? 'warning' : ($p->status == 'ditolak' ? 'danger' : 'secondary')) }}">
+                        {{ ucfirst($p->status) }}
+                    </span>
             </td>
             <td><a href="{{ route('admin.pengaduan.show', $p) }}" class="btn btn-sm btn-info">Detail</a></td>
         </tr>

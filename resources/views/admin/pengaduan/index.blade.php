@@ -43,11 +43,10 @@
         </tbody>
     </table>
 </div>
-<!-- Pagination yang rapi (tombol di atas, teks Showing di bawah) -->
+
 <div class="mt-4">
   
 
-    <!-- Teks Showing di bawah -->
     <div class="text-center text-muted small">
          {{ $pengaduans->links('pagination::bootstrap-5') }}
     </div>

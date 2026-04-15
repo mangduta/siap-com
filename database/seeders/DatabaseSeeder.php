@@ -16,6 +16,9 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
+         $this->call([
+        AdminSeeder::class,
+        ]);
          Kategori::insert([
             ['nama_kategori' => 'Infrastruktur', 'created_at' => now(), 'updated_at' => now()],
             ['nama_kategori' => 'Pelayanan Publik', 'created_at' => now(), 'updated_at' => now()],

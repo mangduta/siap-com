@@ -28,8 +28,23 @@
                 <label class="form-label">Tanggapan</label>
                 <textarea name="tanggapan" class="form-control" rows="3">{{ $pengaduan->tanggapan }}</textarea>
             </div>
-            <button class="btn btn-primary">Simpan</button>
-            <a href="{{ route('admin.pengaduan.index') }}" class="btn btn-secondary">Kembali</a>
+            <div class="d-flex justify-content-between mt-3">
+    
+    <!-- Kiri -->
+    <div>
+        <button type="submit" class="btn btn-primary">Simpan</button>
+        <a href="{{ route('admin.pengaduan.index') }}" class="btn btn-secondary">Kembali</a>
+    </div>
+
+    <!-- Kanan -->
+    <form action="{{ route('admin.pengaduan.destroy', $pengaduan->id) }}" method="POST"
+          onsubmit="return confirm('Yakin ingin menghapus aduan ini?')">
+        @csrf
+        @method('DELETE')
+        <button type="submit" class="btn btn-danger" onclick="return confirm('Yakin ingin menghapus aduan ini?')">Hapus</button>
+    </form>
+
+            </div>
         </form>
     </div>
 </div>
