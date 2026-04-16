@@ -6,6 +6,7 @@
     <title>SIAP - Sistem Informasi Aduan Publik</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="icon" type="image/png" href="{{ asset('images/SIAP.png') }}">
     <style>
         :root {
         --white: #f8fafc;
@@ -58,6 +59,16 @@
             border-color: var(--cyan-glow);
             color: var(--cyan-glow) !important;
         }
+        .nav-link, .btn-outline-light-red {
+            color: #cbd5e1 !important;
+        }
+
+        .btn-outline-light-red:hover {
+            background-color: rgba(239, 68, 68, 0.1);
+            border-color: #ef4444;
+            color: #ef4444   !important;
+        }
+
 
         .btn-warning {
             background-color: var(--purple);
@@ -210,7 +221,7 @@
                     
                     <!-- Logout -->
                     <a href="#" onclick="confirmLogout(event)" 
-                       class="btn btn-outline-light btn-sm text-danger">
+                       class="btn btn-outline-light-red btn-sm text-danger">
                         <i class="bi bi-box-arrow-right"></i> Logout
                     </a>
                 @endauth

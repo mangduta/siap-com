@@ -26,7 +26,6 @@ class PengaduanController extends Controller
     }
 
     // Simpan aduan
-       // Simpan aduan
     public function store(Request $request)
     {
         ini_set('memory_limit', '1024M');
@@ -39,7 +38,7 @@ class PengaduanController extends Controller
             'judul'        => 'required|string|max:255',
             'isi_aduan'    => 'required|string',
             'lokasi'       => 'required|string',
-            'foto'         => 'nullable|image|max:10240', // max 10MB
+            'foto'         => 'nullable|image|max:10240', 
         ]);
 
         if ($request->hasFile('foto')) {

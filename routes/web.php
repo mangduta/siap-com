@@ -15,7 +15,7 @@ Route::post('/cek-aduan', [PengaduanController::class, 'cekStatus'])->name('peng
 // Halaman admin (harus login)
 Route::middleware('auth')->prefix('admin')->group(function () {
     
-    // ← INI YANG DIUBAH
+
     // /admin langsung ke Dashboard (bukan landing lagi)
     Route::get('/', [PengaduanController::class, 'dashboard'])
          ->name('admin.dashboard');
