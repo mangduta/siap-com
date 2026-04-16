@@ -39,7 +39,7 @@ class PengaduanController extends Controller
             'judul'        => 'required|string|max:255',
             'isi_aduan'    => 'required|string',
             'lokasi'       => 'required|string',
-            'foto'         => 'nullable|image|max:2048',
+            'foto'         => 'nullable|image|max:10240', // max 10MB
         ]);
 
         if ($request->hasFile('foto')) {

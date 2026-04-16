@@ -106,7 +106,7 @@
                             <div class="col-md-12">
                                 <label class="form-label fw-semibold">Foto Pendukung (Opsional)</label>
                                 <input type="file" name="foto" class="form-control form-control-lg" accept="image/*">
-                                <small class="text-muted">JPG / PNG • Maksimal 2MB</small>
+                                <small class="text-muted">JPG / PNG • Maksimal 10 MB</small>
                             </div>
 
                         </div>
